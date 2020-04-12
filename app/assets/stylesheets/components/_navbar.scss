@@ -1,0 +1,19 @@
+.navbar-birdthree {
+  justify-content: flex-start;
+  background: white;
+  border-bottom: solid 0.5px gray;
+  display: flex;
+
+}
+
+.navbar-birdthree .navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-birdthree .navbar-brand img {
+  width: 75px;
+}
+
+.nav-link {
+  font-weight: bold;
+}
