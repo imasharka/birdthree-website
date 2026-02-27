@@ -1,0 +1,92 @@
+// Product Card
+.product-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card__image {
+  aspect-ratio: 3 / 4;
+  background-color: $silver;
+  margin-bottom: 16px;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.4s ease;
+
+  &:hover {
+    transform: scale(0.98);
+  }
+}
+
+// Placeholder gradients for product images
+.product-card__image--1,
+.product-card__image--m1 {
+  background: linear-gradient(160deg, $charcoal 0%, $dark-gray 60%, $stone 100%);
+}
+
+.product-card__image--2,
+.product-card__image--m2 {
+  background: linear-gradient(160deg, $sand 0%, $off-white 60%, $stone 100%);
+}
+
+.product-card__image--3,
+.product-card__image--m3 {
+  background: linear-gradient(160deg, $off-black 0%, $charcoal 60%, $medium-gray 100%);
+}
+
+.product-card__image--4,
+.product-card__image--m4 {
+  background: linear-gradient(160deg, $stone 0%, $clay 40%, $off-black 100%);
+}
+
+.product-card__image--m5 {
+  background: linear-gradient(160deg, $dark-gray 0%, $charcoal 50%, $off-black 100%);
+}
+
+.product-card__image--m6 {
+  background: linear-gradient(160deg, $warm-white 0%, $silver 40%, $stone 100%);
+}
+
+.product-card__image--w1 {
+  background: linear-gradient(160deg, $off-white 0%, $sand 60%, $clay 100%);
+}
+
+.product-card__image--w2 {
+  background: linear-gradient(160deg, $silver 0%, $light-gray 50%, $stone 100%);
+}
+
+.product-card__image--w3 {
+  background: linear-gradient(160deg, $off-black 0%, $dark-gray 60%, $charcoal 100%);
+}
+
+.product-card__image--w4 {
+  background: linear-gradient(160deg, $warm-white 0%, $sand 40%, $stone 100%);
+}
+
+.product-card__image--w5 {
+  background: linear-gradient(160deg, $stone 0%, $sand 50%, $off-white 100%);
+}
+
+.product-card__image--w6 {
+  background: linear-gradient(160deg, $clay 0%, $stone 40%, $warm-white 100%);
+}
+
+.product-card__info {
+  h4 {
+    font-size: 0.9375rem;
+    font-weight: 500;
+    margin-bottom: 4px;
+    color: $off-black;
+  }
+}
+
+.product-card__detail {
+  font-size: 0.8125rem;
+  color: $medium-gray;
+  margin-bottom: 8px;
+}
+
+.product-card__price {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: $off-black;
+}

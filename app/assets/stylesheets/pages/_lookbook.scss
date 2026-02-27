@@ -1,0 +1,274 @@
+// Lookbook page
+
+// Season Section
+.lookbook-season {
+  padding: clamp(60px, 8vw, 100px) 0;
+  background-color: $warm-white;
+}
+
+.lookbook-season__inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 clamp(24px, 4vw, 60px);
+}
+
+.lookbook-season__header {
+  max-width: 700px;
+  margin-bottom: clamp(40px, 6vw, 64px);
+
+  h2 {
+    margin-bottom: 16px;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: $medium-gray;
+  }
+}
+
+// Lookbook Grid (masonry-like)
+.lookbook-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 480px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.lookbook-item {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+
+  &:hover .lookbook-item__caption {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.lookbook-item--tall {
+  grid-row: span 2;
+}
+
+.lookbook-item--wide {
+  grid-column: span 2;
+
+  @media (max-width: 480px) {
+    grid-column: span 1;
+  }
+}
+
+.lookbook-item__image {
+  width: 100%;
+  height: 100%;
+  min-height: 320px;
+  background-color: $silver;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.6s ease;
+
+  .lookbook-item:hover & {
+    transform: scale(1.03);
+  }
+}
+
+// Lookbook image placeholders
+.lookbook-item__image--1 {
+  background: linear-gradient(160deg, $charcoal 0%, $dark-gray 50%, $stone 100%);
+}
+
+.lookbook-item__image--2 {
+  background: linear-gradient(160deg, $sand 0%, $off-white 50%, $stone 100%);
+}
+
+.lookbook-item__image--3 {
+  background: linear-gradient(160deg, $off-black 0%, $charcoal 40%, $clay 100%);
+}
+
+.lookbook-item__image--4 {
+  background: linear-gradient(160deg, $off-white 0%, $silver 30%, $sand 60%, $stone 100%);
+}
+
+.lookbook-item__image--5 {
+  background: linear-gradient(160deg, $stone 0%, $clay 50%, $off-black 100%);
+}
+
+.lookbook-item__image--6 {
+  background: linear-gradient(160deg, $dark-gray 0%, $off-black 40%, $charcoal 100%);
+}
+
+.lookbook-item__caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 24px;
+  background: linear-gradient(transparent, rgba($off-black, 0.85));
+  opacity: 0;
+  transform: translateY(8px);
+  transition: all 0.4s ease;
+  display: flex;
+  gap: 12px;
+  align-items: flex-end;
+
+  span {
+    font-family: $display-font;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: $stone;
+    line-height: 1;
+  }
+
+  p {
+    font-size: 0.8125rem;
+    color: $silver;
+    margin: 0;
+    line-height: 1.4;
+  }
+}
+
+// Artist Collaboration
+.artist-collab {
+  padding: clamp(80px, 10vw, 140px) 0;
+  background-color: $off-white;
+}
+
+.artist-collab__inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 clamp(24px, 4vw, 60px);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(40px, 6vw, 80px);
+  align-items: center;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.artist-collab__eyebrow {
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: $stone;
+  margin-bottom: 12px;
+}
+
+.artist-collab__text {
+  h2 {
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 24px;
+  }
+
+  blockquote {
+    border-left: 2px solid $stone;
+    padding-left: 24px;
+    margin: 32px 0 0;
+    font-family: $display-font;
+    font-size: 1.25rem;
+    font-style: italic;
+    color: $dark-gray;
+    line-height: 1.6;
+
+    cite {
+      display: block;
+      font-family: $body-font;
+      font-size: 0.8125rem;
+      font-style: normal;
+      color: $medium-gray;
+      margin-top: 12px;
+      letter-spacing: 0.04em;
+    }
+  }
+}
+
+.artist-collab__gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.artist-collab__piece {
+  aspect-ratio: 1;
+  background-color: $silver;
+}
+
+.artist-collab__piece--1 {
+  background: linear-gradient(140deg, $clay 0%, $stone 40%, $charcoal 80%, $off-black 100%);
+}
+
+.artist-collab__piece--2 {
+  background: linear-gradient(140deg, $off-black 0%, $stone 30%, $sand 70%, $warm-white 100%);
+}
+
+// Previous Seasons
+.prev-seasons {
+  padding: clamp(60px, 8vw, 100px) 0;
+  background-color: $warm-white;
+}
+
+.prev-seasons__inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 clamp(24px, 4vw, 60px);
+
+  > h2 {
+    margin-bottom: clamp(40px, 5vw, 64px);
+  }
+}
+
+.prev-seasons__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.prev-season-card__image {
+  aspect-ratio: 16 / 10;
+  background-color: $silver;
+  margin-bottom: 16px;
+}
+
+.prev-season-card__image--fw25 {
+  background: linear-gradient(160deg, $clay 0%, $stone 40%, $dark-gray 100%);
+}
+
+.prev-season-card__image--ss25 {
+  background: linear-gradient(160deg, $silver 0%, $off-white 40%, $light-gray 100%);
+}
+
+.prev-season-card__image--fw24 {
+  background: linear-gradient(160deg, $off-black 0%, $charcoal 50%, $stone 100%);
+}
+
+.prev-season-card__info {
+  h3 {
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin-bottom: 6px;
+    color: $off-black;
+  }
+
+  p {
+    font-size: 0.875rem;
+    color: $medium-gray;
+  }
+}

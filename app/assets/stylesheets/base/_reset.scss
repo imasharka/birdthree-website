@@ -1,0 +1,43 @@
+// Base reset & global styles
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: $warm-white;
+  color: $off-black;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: $off-black;
+  text-decoration: none;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: $black;
+    text-decoration: none;
+  }
+}
+
+main {
+  min-height: 100vh;
+}
+
+::selection {
+  background-color: $off-black;
+  color: $warm-white;
+}

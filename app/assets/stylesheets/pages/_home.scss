@@ -1,0 +1,280 @@
+// Home page styles
+
+// Brand Statement
+.brand-statement {
+  padding: clamp(80px, 10vw, 140px) 0;
+  background-color: $off-white;
+}
+
+.brand-statement__inner {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 clamp(24px, 4vw, 60px);
+  text-align: center;
+}
+
+.brand-statement__text {
+  font-family: $display-font;
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  font-weight: 300;
+  line-height: 1.5;
+  color: $off-black;
+  letter-spacing: -0.01em;
+
+  em {
+    font-style: italic;
+    color: $clay;
+  }
+}
+
+// Collections Preview
+.collections-preview {
+  padding: clamp(60px, 8vw, 120px) 0;
+  background-color: $warm-white;
+}
+
+.collections-preview__inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 clamp(24px, 4vw, 60px);
+}
+
+.collections-preview__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 48px;
+
+  h2 {
+    margin: 0;
+  }
+}
+
+.collections-preview__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.collection-card {
+  text-decoration: none;
+  display: block;
+
+  &:hover {
+    text-decoration: none;
+
+    .collection-card__image {
+      transform: scale(0.98);
+    }
+  }
+}
+
+.collection-card__image {
+  aspect-ratio: 4 / 5;
+  background-color: $silver;
+  position: relative;
+  margin-bottom: 20px;
+  overflow: hidden;
+  transition: transform 0.5s ease;
+}
+
+.collection-card__image--mens {
+  background: linear-gradient(160deg, $off-black 0%, $charcoal 40%, $dark-gray 70%, $stone 100%);
+}
+
+.collection-card__image--womens {
+  background: linear-gradient(160deg, $off-white 0%, $sand 30%, $stone 60%, $clay 100%);
+}
+
+.collection-card__label {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: $warm-white;
+  background-color: rgba($off-black, 0.7);
+  padding: 8px 16px;
+}
+
+.collection-card__info {
+  h3 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 6px;
+    color: $off-black;
+  }
+
+  p {
+    font-size: 0.875rem;
+    color: $medium-gray;
+  }
+}
+
+// Featured Pieces
+.featured {
+  padding: clamp(60px, 8vw, 120px) 0;
+  background-color: $off-white;
+}
+
+.featured__inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 clamp(24px, 4vw, 60px);
+}
+
+.featured__header {
+  margin-bottom: 48px;
+
+  h2 {
+    margin: 0;
+  }
+}
+
+.featured__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+
+  @media (max-width: 992px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 480px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Artwork Section
+.artwork-home {
+  padding: clamp(80px, 10vw, 140px) 0;
+  background-color: $warm-white;
+}
+
+.artwork-home__inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 clamp(24px, 4vw, 60px);
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: clamp(40px, 6vw, 80px);
+  align-items: center;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.artwork-home__eyebrow {
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: $stone;
+  margin-bottom: 12px;
+}
+
+.artwork-home__text {
+  h2 {
+    margin-bottom: 20px;
+  }
+
+  p {
+    margin-bottom: 32px;
+  }
+}
+
+.artwork-home__gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 8px;
+}
+
+.artwork-home__tile {
+  background-color: $silver;
+  min-height: 200px;
+}
+
+.artwork-home__tile--1 {
+  grid-row: span 2;
+  background: linear-gradient(140deg, $clay 0%, $stone 40%, $off-black 100%);
+}
+
+.artwork-home__tile--2 {
+  background: linear-gradient(140deg, $charcoal 0%, $off-black 60%, $stone 100%);
+}
+
+.artwork-home__tile--3 {
+  background: linear-gradient(140deg, $sand 0%, $warm-white 40%, $silver 100%);
+}
+
+// Newsletter
+.newsletter {
+  padding: clamp(80px, 10vw, 120px) 0;
+  background-color: $off-black;
+  text-align: center;
+}
+
+.newsletter__inner {
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 0 clamp(24px, 4vw, 60px);
+
+  h2 {
+    color: $warm-white;
+    margin-bottom: 12px;
+  }
+
+  p {
+    color: $medium-gray;
+    margin-bottom: 36px;
+  }
+}
+
+.newsletter__form {
+  display: flex;
+  gap: 0;
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+.newsletter__input {
+  flex: 1;
+  padding: 14px 20px;
+  border: 1px solid $charcoal;
+  background-color: transparent;
+  color: $warm-white;
+  font-family: $body-font;
+  font-size: 0.875rem;
+  outline: none;
+  transition: border-color 0.2s ease;
+
+  &::placeholder {
+    color: $dark-gray;
+  }
+
+  &:focus {
+    border-color: $medium-gray;
+  }
+}
+
+.newsletter__form .bt-btn {
+  background-color: $warm-white;
+  color: $off-black;
+  border-color: $warm-white;
+
+  &:hover {
+    background-color: transparent;
+    color: $warm-white;
+  }
+}

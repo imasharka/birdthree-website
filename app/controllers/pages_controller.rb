@@ -2,6 +2,12 @@ class PagesController < ApplicationController
   def home
   end
 
-  def about_us
+  def collections
+  end
+
+  def about
+  end
+
+  def lookbook
   end
 end

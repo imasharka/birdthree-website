@@ -1,0 +1,110 @@
+// Collections page
+
+.collection-section {
+  padding: clamp(60px, 8vw, 100px) 0;
+  background-color: $warm-white;
+}
+
+.collection-section__inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 clamp(24px, 4vw, 60px);
+}
+
+.collection-section__header {
+  max-width: 600px;
+  margin-bottom: 48px;
+
+  h2 {
+    font-family: $display-font;
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin-bottom: 12px;
+  }
+
+  p {
+    font-size: 1rem;
+    color: $medium-gray;
+  }
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px 24px;
+
+  @media (max-width: 992px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 480px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.section-divider {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 clamp(24px, 4vw, 60px);
+  border-bottom: 1px solid $silver;
+}
+
+// Fabric Story
+.fabric-story {
+  padding: clamp(80px, 10vw, 120px) 0;
+  background-color: $off-white;
+}
+
+.fabric-story__inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 clamp(24px, 4vw, 60px);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(40px, 6vw, 80px);
+  align-items: center;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.fabric-story__text {
+  h3 {
+    margin-bottom: 16px;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+}
+
+.fabric-story__stats {
+  display: flex;
+  gap: clamp(32px, 4vw, 60px);
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+
+.fabric-stat {
+  display: flex;
+  flex-direction: column;
+}
+
+.fabric-stat__number {
+  font-family: $display-font;
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  font-weight: 300;
+  color: $off-black;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.fabric-stat__label {
+  font-size: 0.8125rem;
+  color: $medium-gray;
+  letter-spacing: 0.02em;
+}

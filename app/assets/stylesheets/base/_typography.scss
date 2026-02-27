@@ -1,0 +1,99 @@
+// Typography system
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $headers-font;
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: $off-black;
+}
+
+h1 {
+  font-family: $display-font;
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-weight: 300;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+}
+
+h2 {
+  font-family: $display-font;
+  font-size: clamp(1.75rem, 3.5vw, 3rem);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+}
+
+h3 {
+  font-size: clamp(1.25rem, 2vw, 1.75rem);
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+h4 {
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+p {
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  color: $dark-gray;
+}
+
+em {
+  font-family: $display-font;
+  font-style: italic;
+  font-weight: 400;
+}
+
+// Utility classes
+.bt-btn {
+  display: inline-block;
+  padding: 14px 36px;
+  background-color: $off-black;
+  color: $warm-white;
+  font-family: $body-font;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid $off-black;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: $warm-white;
+    color: $off-black;
+    text-decoration: none;
+  }
+}
+
+.bt-btn--outline {
+  background-color: transparent;
+  color: $off-black;
+
+  &:hover {
+    background-color: $off-black;
+    color: $warm-white;
+  }
+}
+
+.bt-link {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $off-black;
+  text-decoration: none;
+  border-bottom: 1px solid $off-black;
+  padding-bottom: 2px;
+  transition: all 0.2s ease;
+
+  &:hover {
+    color: $dark-gray;
+    border-color: $dark-gray;
+    text-decoration: none;
+  }
+}

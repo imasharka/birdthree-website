@@ -1,0 +1,42 @@
+// Page Hero (used on Collections, About, Lookbook)
+.page-hero {
+  padding: 160px 0 80px;
+  text-align: center;
+  background-color: $warm-white;
+
+  @media (max-width: 768px) {
+    padding: 120px 0 60px;
+  }
+}
+
+.page-hero__inner {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 clamp(24px, 4vw, 60px);
+
+  h1 {
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 1.0625rem;
+    line-height: 1.8;
+    color: $medium-gray;
+  }
+}
+
+.page-hero--about {
+  background-color: $off-white;
+}
+
+.page-hero--lookbook {
+  background-color: $off-black;
+
+  h1 {
+    color: $warm-white;
+  }
+
+  p {
+    color: $medium-gray;
+  }
+}

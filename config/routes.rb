@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
-  get 'apparel/index'
   root to: 'pages#home'
-  get 'pages/about_us' => 'pages#about_us'
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+
+  get '/collections',  to: 'pages#collections', as: :collections
+  get '/about',        to: 'pages#about',       as: :about
+  get '/lookbook',     to: 'pages#lookbook',     as: :lookbook
 end

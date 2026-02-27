@@ -1,0 +1,91 @@
+// Footer
+.bt-footer {
+  background-color: $off-black;
+  color: $silver;
+  padding: 80px 0 40px;
+}
+
+.bt-footer__inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 clamp(24px, 4vw, 60px);
+}
+
+.bt-footer__top {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 60px;
+  padding-bottom: 60px;
+  border-bottom: 1px solid $charcoal;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+.bt-footer__logo {
+  font-family: $headers-font;
+  font-size: 1.125rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: $warm-white;
+  margin-bottom: 16px;
+}
+
+.bt-footer__tagline {
+  font-size: 0.875rem;
+  line-height: 1.7;
+  color: $medium-gray;
+}
+
+.bt-footer__nav {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+
+  @media (max-width: 480px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  h4 {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: $warm-white;
+    margin-bottom: 16px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    margin-bottom: 10px;
+  }
+
+  a {
+    font-size: 0.875rem;
+    color: $medium-gray;
+    text-decoration: none;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: $warm-white;
+    }
+  }
+}
+
+.bt-footer__bottom {
+  padding-top: 32px;
+
+  p {
+    font-size: 0.75rem;
+    color: $dark-gray;
+    letter-spacing: 0.04em;
+  }
+}
