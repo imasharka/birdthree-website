@@ -3,6 +3,10 @@
 .collection-section {
   padding: clamp(60px, 8vw, 100px) 0;
   background-color: $warm-white;
+
+  &:nth-of-type(even) {
+    background-color: $off-white;
+  }
 }
 
 .collection-section__inner {

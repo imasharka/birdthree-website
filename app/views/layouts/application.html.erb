@@ -12,9 +12,10 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
   <body>
+    <a href="#main-content" class="skip-link">Skip to content</a>
     <%= render 'shared/navbar' %>
 
-    <main>
+    <main id="main-content">
       <%= yield %>
     </main>
 

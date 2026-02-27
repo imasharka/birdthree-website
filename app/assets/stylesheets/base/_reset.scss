@@ -41,3 +41,21 @@ main {
   background-color: $off-black;
   color: $warm-white;
 }
+
+// Skip to content link (accessibility)
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 16px;
+  z-index: 9999;
+  padding: 12px 24px;
+  background-color: $off-black;
+  color: $warm-white;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-decoration: none;
+
+  &:focus {
+    top: 16px;
+  }
+}

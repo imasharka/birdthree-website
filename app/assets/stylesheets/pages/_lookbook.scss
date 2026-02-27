@@ -47,7 +47,8 @@
   overflow: hidden;
   cursor: pointer;
 
-  &:hover .lookbook-item__caption {
+  &:hover .lookbook-item__caption,
+  &:focus-within .lookbook-item__caption {
     opacity: 1;
     transform: translateY(0);
   }
