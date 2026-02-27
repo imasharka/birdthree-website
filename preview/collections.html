@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collections — Bird Three</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="bt-nav">
+    <div class="bt-nav__inner">
+      <a class="bt-nav__logo" href="index.html">
+        <span class="bt-nav__logo-text">BIRD THREE</span>
+      </a>
+
+      <button class="bt-nav__toggle" type="button" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation" onclick="document.getElementById('mainNav').classList.toggle('show'); this.setAttribute('aria-expanded', document.getElementById('mainNav').classList.contains('show'));">
+        <span class="bt-nav__toggle-bar"></span>
+        <span class="bt-nav__toggle-bar"></span>
+      </button>
+
+      <div class="bt-nav__menu" id="mainNav">
+        <ul class="bt-nav__links">
+          <li><a href="collections.html">Collections</a></li>
+          <li><a href="lookbook.html">Lookbook</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Collections Hero -->
+    <section class="page-hero">
+      <div class="page-hero__inner">
+        <h1>Collections</h1>
+        <p>Simple modern pieces built from functional fabrics. Designed for real life.</p>
+      </div>
+    </section>
+
+    <!-- Men's Collection -->
+    <section class="collection-section" id="mens">
+      <div class="collection-section__inner">
+        <div class="collection-section__header">
+          <h2>Men</h2>
+          <p>Minimal silhouettes engineered for comfort and movement. Technical fabrics that perform, designs that endure.</p>
+        </div>
+
+        <div class="product-grid">
+          <div class="product-card">
+            <div class="product-card__image product-card__image--m1"></div>
+            <div class="product-card__info">
+              <h4>Technical Overshirt</h4>
+              <p class="product-card__detail">Water-resistant ripstop &middot; Relaxed fit</p>
+              <span class="product-card__price">$185</span>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-card__image product-card__image--m2"></div>
+            <div class="product-card__info">
+              <h4>Merino Crew Tee</h4>
+              <p class="product-card__detail">Temperature regulating &middot; Regular fit</p>
+              <span class="product-card__price">$95</span>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-card__image product-card__image--m3"></div>
+            <div class="product-card__info">
+              <h4>Stretch Tailored Trouser</h4>
+              <p class="product-card__detail">4-way stretch &middot; Tapered leg</p>
+              <span class="product-card__price">$145</span>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-card__image product-card__image--m4"></div>
+            <div class="product-card__info">
+              <h4>Art Print Hoodie</h4>
+              <p class="product-card__detail">Organic cotton blend &middot; Oversized</p>
+              <span class="product-card__price">$165</span>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-card__image product-card__image--m5"></div>
+            <div class="product-card__info">
+              <h4>Ventile Field Jacket</h4>
+              <p class="product-card__detail">Breathable cotton &middot; Stow-away hood</p>
+              <span class="product-card__price">$295</span>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-card__image product-card__image--m6"></div>
+            <div class="product-card__info">
+              <h4>Graphic Tee &mdash; Flux</h4>
+              <p class="product-card__detail">Artist collab &middot; Limited run</p>
+              <span class="product-card__price">$75</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Divider -->
+    <div class="section-divider"></div>
+
+    <!-- Women's Collection -->
+    <section class="collection-section" id="womens">
+      <div class="collection-section__inner">
+        <div class="collection-section__header">
+          <h2>Women</h2>
+          <p>Clean lines and functional elegance. Pieces that transition seamlessly from studio to street.</p>
+        </div>
+
+        <div class="product-grid">
+          <div class="product-card">
+            <div class="product-card__image product-card__image--w1"></div>
+            <div class="product-card__info">
+              <h4>Sculpt Bodysuit</h4>
+              <p class="product-card__detail">Compression knit &middot; Second-skin fit</p>
+              <span class="product-card__price">$110</span>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-card__image product-card__image--w2"></div>
+            <div class="product-card__info">
+              <h4>Wide Leg Trouser</h4>
+              <p class="product-card__detail">Tencel blend &middot; High waist</p>
+              <span class="product-card__price">$155</span>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-card__image product-card__image--w3"></div>
+            <div class="product-card__info">
+              <h4>Cropped Tech Jacket</h4>
+              <p class="product-card__detail">Windproof shell &middot; Boxy silhouette</p>
+              <span class="product-card__price">$225</span>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-card__image product-card__image--w4"></div>
+            <div class="product-card__info">
+              <h4>Oversized Art Tee</h4>
+              <p class="product-card__detail">Organic cotton &middot; Artist series</p>
+              <span class="product-card__price">$85</span>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-card__image product-card__image--w5"></div>
+            <div class="product-card__info">
+              <h4>Merino Wrap Cardigan</h4>
+              <p class="product-card__detail">Temperature regulating &middot; Drapey fit</p>
+              <span class="product-card__price">$175</span>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-card__image product-card__image--w6"></div>
+            <div class="product-card__info">
+              <h4>Graphic Tee &mdash; Bloom</h4>
+              <p class="product-card__detail">Artist collab &middot; Limited run</p>
+              <span class="product-card__price">$75</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fabric Story -->
+    <section class="fabric-story">
+      <div class="fabric-story__inner">
+        <div class="fabric-story__text">
+          <h3>Built Different</h3>
+          <p>Every piece starts with the fabric. We source technical textiles from mills in Japan, Portugal, and Italy &mdash; materials that move, breathe, and last. No fast fashion. No compromise.</p>
+        </div>
+        <div class="fabric-story__stats">
+          <div class="fabric-stat">
+            <span class="fabric-stat__number">100%</span>
+            <span class="fabric-stat__label">Functional fabrics</span>
+          </div>
+          <div class="fabric-stat">
+            <span class="fabric-stat__number">12</span>
+            <span class="fabric-stat__label">Mill partners worldwide</span>
+          </div>
+          <div class="fabric-stat">
+            <span class="fabric-stat__number">0</span>
+            <span class="fabric-stat__label">Trend-driven decisions</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bt-footer">
+    <div class="bt-footer__inner">
+      <div class="bt-footer__top">
+        <div class="bt-footer__brand">
+          <h3 class="bt-footer__logo">BIRD THREE</h3>
+          <p class="bt-footer__tagline">Functional fabrics. Sleek designs.<br>Wearable art for the modern individual.</p>
+        </div>
+
+        <div class="bt-footer__nav">
+          <div class="bt-footer__col">
+            <h4>Shop</h4>
+            <ul>
+              <li><a href="collections.html">All Collections</a></li>
+              <li><a href="collections.html#mens">Men</a></li>
+              <li><a href="collections.html#womens">Women</a></li>
+            </ul>
+          </div>
+          <div class="bt-footer__col">
+            <h4>Brand</h4>
+            <ul>
+              <li><a href="about.html">Our Story</a></li>
+              <li><a href="lookbook.html">Lookbook</a></li>
+            </ul>
+          </div>
+          <div class="bt-footer__col">
+            <h4>Connect</h4>
+            <ul>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Newsletter</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="bt-footer__bottom">
+        <p>&copy; 2026 Bird Three. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

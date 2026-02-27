@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bird Three — Modern Apparel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="bt-nav">
+    <div class="bt-nav__inner">
+      <a class="bt-nav__logo" href="index.html">
+        <span class="bt-nav__logo-text">BIRD THREE</span>
+      </a>
+
+      <button class="bt-nav__toggle" type="button" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation" onclick="document.getElementById('mainNav').classList.toggle('show'); this.setAttribute('aria-expanded', document.getElementById('mainNav').classList.contains('show'));">
+        <span class="bt-nav__toggle-bar"></span>
+        <span class="bt-nav__toggle-bar"></span>
+      </button>
+
+      <div class="bt-nav__menu" id="mainNav">
+        <ul class="bt-nav__links">
+          <li><a href="collections.html">Collections</a></li>
+          <li><a href="lookbook.html">Lookbook</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero__content">
+        <p class="hero__eyebrow">Modern Apparel &mdash; SS26</p>
+        <h1 class="hero__title">Form Follows<br>Function</h1>
+        <p class="hero__subtitle">Functional fabrics and sleek designs for the modern wardrobe. Simple pieces, considered details, wearable art.</p>
+        <a href="collections.html" class="bt-btn">Explore Collections</a>
+      </div>
+      <div class="hero__visual">
+        <div class="hero__image-block hero__image-block--1"></div>
+        <div class="hero__image-block hero__image-block--2"></div>
+      </div>
+    </section>
+
+    <!-- Brand Statement -->
+    <section class="brand-statement">
+      <div class="brand-statement__inner">
+        <h2 class="brand-statement__text">
+          We design for people who value <em>simplicity</em>, demand <em>function</em>, and appreciate <em>art</em>.
+        </h2>
+      </div>
+    </section>
+
+    <!-- Collections Preview -->
+    <section class="collections-preview">
+      <div class="collections-preview__inner">
+        <div class="collections-preview__header">
+          <h2>Collections</h2>
+          <a href="collections.html" class="bt-link">View All &rarr;</a>
+        </div>
+
+        <div class="collections-preview__grid">
+          <a href="collections.html#mens" class="collection-card">
+            <div class="collection-card__image collection-card__image--mens">
+              <span class="collection-card__label">Men</span>
+            </div>
+            <div class="collection-card__info">
+              <h3>Men's Essentials</h3>
+              <p>Minimal silhouettes in performance fabrics</p>
+            </div>
+          </a>
+
+          <a href="collections.html#womens" class="collection-card">
+            <div class="collection-card__image collection-card__image--womens">
+              <span class="collection-card__label">Women</span>
+            </div>
+            <div class="collection-card__info">
+              <h3>Women's Essentials</h3>
+              <p>Clean lines with functional elegance</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Pieces -->
+    <section class="featured">
+      <div class="featured__inner">
+        <div class="featured__header">
+          <h2>Featured Pieces</h2>
+        </div>
+
+        <div class="featured__grid">
+          <div class="product-card">
+            <div class="product-card__image product-card__image--1"></div>
+            <div class="product-card__info">
+              <h4>Technical Overshirt</h4>
+              <p class="product-card__detail">Water-resistant ripstop &middot; Relaxed fit</p>
+              <span class="product-card__price">$185</span>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-card__image product-card__image--2"></div>
+            <div class="product-card__info">
+              <h4>Merino Crew Tee</h4>
+              <p class="product-card__detail">Temperature regulating &middot; Unisex</p>
+              <span class="product-card__price">$95</span>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-card__image product-card__image--3"></div>
+            <div class="product-card__info">
+              <h4>Stretch Tailored Trouser</h4>
+              <p class="product-card__detail">4-way stretch &middot; Tapered leg</p>
+              <span class="product-card__price">$145</span>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-card__image product-card__image--4"></div>
+            <div class="product-card__info">
+              <h4>Art Print Hoodie</h4>
+              <p class="product-card__detail">Organic cotton &middot; Limited edition</p>
+              <span class="product-card__price">$165</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Artwork Section -->
+    <section class="artwork-home">
+      <div class="artwork-home__inner">
+        <div class="artwork-home__text">
+          <p class="artwork-home__eyebrow">Art &times; Apparel</p>
+          <h2>Wearable Art</h2>
+          <p>Every season we collaborate with emerging artists to create limited-edition prints and graphics. Each piece tells a story &mdash; from hand-drawn illustrations to abstract compositions, embedded into the fabric of everyday wear.</p>
+          <a href="lookbook.html" class="bt-btn bt-btn--outline">View Lookbook</a>
+        </div>
+        <div class="artwork-home__gallery">
+          <div class="artwork-home__tile artwork-home__tile--1"></div>
+          <div class="artwork-home__tile artwork-home__tile--2"></div>
+          <div class="artwork-home__tile artwork-home__tile--3"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+      <div class="newsletter__inner">
+        <h2>Stay in the Loop</h2>
+        <p>New drops, artist collaborations, and early access. No spam, ever.</p>
+        <form class="newsletter__form" onsubmit="event.preventDefault(); alert('Thanks for subscribing!');">
+          <input type="email" placeholder="Your email address" class="newsletter__input" required>
+          <button type="submit" class="bt-btn">Subscribe</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bt-footer">
+    <div class="bt-footer__inner">
+      <div class="bt-footer__top">
+        <div class="bt-footer__brand">
+          <h3 class="bt-footer__logo">BIRD THREE</h3>
+          <p class="bt-footer__tagline">Functional fabrics. Sleek designs.<br>Wearable art for the modern individual.</p>
+        </div>
+
+        <div class="bt-footer__nav">
+          <div class="bt-footer__col">
+            <h4>Shop</h4>
+            <ul>
+              <li><a href="collections.html">All Collections</a></li>
+              <li><a href="collections.html#mens">Men</a></li>
+              <li><a href="collections.html#womens">Women</a></li>
+            </ul>
+          </div>
+          <div class="bt-footer__col">
+            <h4>Brand</h4>
+            <ul>
+              <li><a href="about.html">Our Story</a></li>
+              <li><a href="lookbook.html">Lookbook</a></li>
+            </ul>
+          </div>
+          <div class="bt-footer__col">
+            <h4>Connect</h4>
+            <ul>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Newsletter</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="bt-footer__bottom">
+        <p>&copy; 2026 Bird Three. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

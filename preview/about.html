@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Bird Three</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="bt-nav">
+    <div class="bt-nav__inner">
+      <a class="bt-nav__logo" href="index.html">
+        <span class="bt-nav__logo-text">BIRD THREE</span>
+      </a>
+
+      <button class="bt-nav__toggle" type="button" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation" onclick="document.getElementById('mainNav').classList.toggle('show'); this.setAttribute('aria-expanded', document.getElementById('mainNav').classList.contains('show'));">
+        <span class="bt-nav__toggle-bar"></span>
+        <span class="bt-nav__toggle-bar"></span>
+      </button>
+
+      <div class="bt-nav__menu" id="mainNav">
+        <ul class="bt-nav__links">
+          <li><a href="collections.html">Collections</a></li>
+          <li><a href="lookbook.html">Lookbook</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- About Hero -->
+    <section class="page-hero page-hero--about">
+      <div class="page-hero__inner">
+        <h1>Our Story</h1>
+        <p>Born from a belief that clothes should work as hard as you do &mdash; and look effortless doing it.</p>
+      </div>
+    </section>
+
+    <!-- Origin Story -->
+    <section class="about-story">
+      <div class="about-story__inner">
+        <div class="about-story__image about-story__image--origin"></div>
+        <div class="about-story__text">
+          <h2>Where It Started</h2>
+          <p>Bird Three began with a simple frustration: why choose between looking good and feeling good? Founded by a couple who couldn't find clothes that matched their lifestyle &mdash; functional enough for everyday movement, designed with the care of something you'd actually want to wear.</p>
+          <p>So they started making their own. What began as personal projects in a small studio grew into a brand built on one principle: <strong>form follows function, but never at the expense of beauty.</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Values -->
+    <section class="about-values">
+      <div class="about-values__inner">
+        <h2>What We Stand For</h2>
+
+        <div class="values-grid">
+          <div class="value-card">
+            <span class="value-card__number">01</span>
+            <h3>Functional First</h3>
+            <p>Every fabric is chosen for its performance properties &mdash; moisture-wicking, temperature-regulating, four-way stretch, water-resistant. Your clothes should keep up with your life.</p>
+          </div>
+
+          <div class="value-card">
+            <span class="value-card__number">02</span>
+            <h3>Sleek by Design</h3>
+            <p>Clean lines, considered proportions, zero excess. We strip away the unnecessary to let the materials and construction speak. Modern pieces that fit into any wardrobe, any context.</p>
+          </div>
+
+          <div class="value-card">
+            <span class="value-card__number">03</span>
+            <h3>Art Inside</h3>
+            <p>We collaborate with artists every season to bring unique prints, graphics, and details into our collections. Fashion should inspire &mdash; and every piece should feel like it has a soul.</p>
+          </div>
+
+          <div class="value-card">
+            <span class="value-card__number">04</span>
+            <h3>Made to Last</h3>
+            <p>We don't do trends. We design pieces you'll reach for years from now. Quality construction, timeless design, and fabrics that age gracefully. Buy less, choose well.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process -->
+    <section class="about-process">
+      <div class="about-process__inner">
+        <div class="about-process__text">
+          <h2>The Process</h2>
+          <p>We work directly with specialist mills in Japan, Portugal, and Italy, sourcing technical fabrics that are normally reserved for outdoor or performance gear. Then we cut them into clean, modern silhouettes that feel at home in the city.</p>
+          <p>Our design process is iterative &mdash; prototyping, wearing, refining. Every piece goes through dozens of iterations before it earns the Bird Three label. If it doesn't feel right on the body, it doesn't ship.</p>
+        </div>
+        <div class="about-process__image about-process__image--studio"></div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="about-cta">
+      <div class="about-cta__inner">
+        <h2>See It in Action</h2>
+        <p>Explore our latest collection or browse the lookbook to see how our pieces come to life.</p>
+        <div class="about-cta__buttons">
+          <a href="collections.html" class="bt-btn">Shop Collections</a>
+          <a href="lookbook.html" class="bt-btn bt-btn--outline">View Lookbook</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bt-footer">
+    <div class="bt-footer__inner">
+      <div class="bt-footer__top">
+        <div class="bt-footer__brand">
+          <h3 class="bt-footer__logo">BIRD THREE</h3>
+          <p class="bt-footer__tagline">Functional fabrics. Sleek designs.<br>Wearable art for the modern individual.</p>
+        </div>
+
+        <div class="bt-footer__nav">
+          <div class="bt-footer__col">
+            <h4>Shop</h4>
+            <ul>
+              <li><a href="collections.html">All Collections</a></li>
+              <li><a href="collections.html#mens">Men</a></li>
+              <li><a href="collections.html#womens">Women</a></li>
+            </ul>
+          </div>
+          <div class="bt-footer__col">
+            <h4>Brand</h4>
+            <ul>
+              <li><a href="about.html">Our Story</a></li>
+              <li><a href="lookbook.html">Lookbook</a></li>
+            </ul>
+          </div>
+          <div class="bt-footer__col">
+            <h4>Connect</h4>
+            <ul>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Newsletter</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="bt-footer__bottom">
+        <p>&copy; 2026 Bird Three. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
